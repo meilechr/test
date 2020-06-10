@@ -9,14 +9,24 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var firstName: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let label = UILabel()
+        label.text = "Hello"
+        label.frame = CGRect(x: 150, y: 200, width: 100, height: 20)
+        view.addSubview(label)
+        
+        
+
     }
     
-
+    
     /*
     // MARK: - Navigation
 

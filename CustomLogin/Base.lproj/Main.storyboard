@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sign Up View Controller-->
+        <!--Sign Up-->
         <scene sceneID="fpH-cL-G1S">
             <objects>
                 <viewController id="QVT-Kl-h9M" customClass="SignUpViewController" customModule="CustomLogin" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6qX-6V-ZVY">
-                                <rect key="frame" x="40" y="148" width="334" height="370.5"/>
+                                <rect key="frame" x="40" y="128" width="334" height="370.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8M-lv-C4u">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -65,6 +65,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6qX-6V-ZVY" firstAttribute="top" secondItem="SlQ-Rf-auz" secondAttribute="top" constant="40" id="0fS-HM-rZc"/>
                             <constraint firstItem="6qX-6V-ZVY" firstAttribute="top" secondItem="SlQ-Rf-auz" secondAttribute="top" constant="40" id="E0l-qS-cIx"/>
                             <constraint firstItem="6qX-6V-ZVY" firstAttribute="top" secondItem="SlQ-Rf-auz" secondAttribute="top" constant="60" id="GOH-GJ-c9i"/>
                             <constraint firstItem="SlQ-Rf-auz" firstAttribute="trailing" secondItem="6qX-6V-ZVY" secondAttribute="trailing" constant="40" id="XDx-Ol-ZFk"/>
@@ -72,7 +73,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SlQ-Rf-auz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="d7V-6r-aJC"/>
+                    <navigationItem key="navigationItem" title="Sign Up" id="Z1Q-8L-4Qv"/>
                     <connections>
                         <outlet property="emailTextField" destination="l5W-bH-pxG" id="t3g-w8-DCi"/>
                         <outlet property="errorLabel" destination="fPg-Y8-Bcz" id="zm6-rv-g3K"/>
@@ -95,7 +96,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re6-Tu-C10">
-                                <rect key="frame" x="160" y="438" width="97" height="29"/>
+                                <rect key="frame" x="159" y="142" width="97" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
@@ -162,7 +163,7 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="tCX-T3-x5T">
             <objects>
                 <viewController id="9X1-zB-5xn" customClass="LoginViewController" customModule="CustomLogin" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,7 +215,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gzj-yu-jDZ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="iSt-oD-a0T"/>
+                    <navigationItem key="navigationItem" title="Login" id="OZV-No-iwK"/>
                     <connections>
                         <outlet property="emailNameTextField" destination="so2-ST-2JL" id="tpL-5p-uGR"/>
                         <outlet property="errorLabel" destination="OrU-3T-jJT" id="QBU-Yo-ESO"/>

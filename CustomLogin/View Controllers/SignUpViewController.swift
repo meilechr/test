@@ -28,7 +28,7 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
-    
+    var completionHandler: ((String?) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -127,6 +127,10 @@ class SignUpViewController: UIViewController {
                         }
                         
                     }
+                    
+                    // WORKING HERE ***** may be wrong one -> this has to be on the one that sends the data
+                    self.completionHandler?(firstName)
+                    
                     
                     // Transition ot home screen
                     self.transitionToHome()
